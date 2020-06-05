@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>New Activities</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+	<header>
+		<div class="header">NCC Music Festivals</div>
+		<div class="mobileNav">
+			<img src="img/icon.png" width="7%" height="7%" onclick="show()">
+		</div>
+		<nav>
+			<ul class="nav" id="myNav">
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="Festivals.html">Festivals</a></li>
+			<li><a href="Register.html">Register</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="NewActivities.html" class="selectTab">New Activities</a></li>
+			<li><a href="BookOnline.html">Book Online</a></li>
+			<li><a href="Accommodation.html">Accommodation</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="festivalText margin-adjust" id="festivalText" align="center">New Activities</div>
+<div class="festivalText1">Love Family Park</div>
+<div class="font"><ul>
+	<li>The music festival in Love Family Park will be held from October,20 to October,26.</li>
+	<li>If you are from a foreign country, it's recommended that you book airline ticket from us too.</li>
+	<li>On this airline plane, you'll be provided three meals a day.</li>
+	<li>You will need to leave early from your country, if your country is a bit far from Germany.</li>
+	<li>The accommodation budget would be average US$400 for an adult in that 1 week.</li>
+	<li>You can pay this with e-payment and let us prepare your accommodation for you.</li>
+</ul></div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1282.3598530978704!2d8.412393808278711!3d49.99786429485392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1slove%20family%20park%20germany!5e0!3m2!1sen!2smm!4v1584872781339!5m2!1sen!2smm" width="1000" height="500" aria-hidden="false" tabindex="0" class="col-1"></iframe>
+<div class="festivalText1">Millennium Park, Chicago</div>
+<div class="font">
+	<ul>
+		<li>The music festival in Millennium Park will be held from December,1 to December,5.</li>
+		<li>We will first look at how things go with our music festival in Love Family Park in Germany.</li>
+		<li>Then, we will decide how things would be planned.</li>
+		<li>So, check this website back in November.</li>
+		<li>But don't worry. If you have given us your email address, we will send you an email related with this.</li>
+	</ul>
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d5940.8480942333!2d-87.6237821233249!3d41.88373666688696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMillennium%20Park%2C%20Chicago!5e0!3m2!1sen!2smm!4v1584874298806!5m2!1sen!2smm" width="1000" height="500" allowfullscreen="" aria-hidden="false" tabindex="0" class="col-1"></iframe>
+
+<script type="text/javascript">
+	function show()
+	{
+		var navMenu = document.getElementById('myNav');
+		var marginAdjust = document.getElementById('festivalText');
+		if(navMenu.style.display == "none")
+		{
+			navMenu.style.display = "block";
+			marginAdjust.style.marginTop = "90%";
+		}
+		else
+		{
+			navMenu.style.display = "none";
+			marginAdjust.style.marginTop = "35%";
+		}
+	}
+</script>
+</body>
+</html>

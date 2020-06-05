@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+	<header>
+		<div class="header">NCC Music Festivals</div>
+		<div class="mobileNav">
+			<img src="img/icon.png" width="7%" height="7%" onclick="show()">
+		</div>
+		<nav>
+			<ul class="nav" id="myNav">
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="Festivals.html">Festivals</a></li>
+			<li><a href="Register.html">Register</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="NewActivities.html">New Activities</a></li>
+			<li><a href="BookOnline.html">Book Online</a></li>
+			<li><a href="Accommodation.html"  class="selectTab">Accommodation</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="festivalText margin-adjust" id="festivalText">Accommodation</div>
+<br>
+	<div class="col-p-1">
+		<img src="img/4.jfif" width="70%">
+	</div>
+	<div class="col-p-2 font">
+	<b>Westbridge Hotel</b>
+		<ul type="square">
+			<li>This accommodation was provided for NCC music festival in Studio 9294.</li>
+			<li>It is a four-star hotel.</li>
+			<li>Address: 335-337 High Street, London E15 2TF, England</li>
+			<li>Facilities provided</li>
+			<li>Restaurant</li>
+			<li>Bar and Lounge</li>
+			<li>Lounge/Business Centre</li>
+			<li>Gym</li>
+			<li>Courtyard</li>
+			<li>Facilities For Disabled Guests</li>
+			<li>Lifts</li>
+			<li>Free Internet Access In Rooms And Public Areas</li>
+		</ul>
+	</div>
+
+<div class="col-p-1">
+	<img src="img/135067193.jpg" width="70%">
+</div>
+<div class="col-p-2 font">
+	<b>Best Western Amedia Frankfurt Airport</b>
+	<ul type="square">
+		<li>This accommodation will be provided for NCC music festival in Love Family Park, Germany.</li>
+		<li>It is a four-star hotel.</li>
+		<li>Address: Anton-Flettner-Strasse 8, 65479 Raunheim, Germany </li>
+		<li>Facilities provided</li>
+		<li>Airport shuttle</li>
+		<li>Non-smoking rooms</li>
+		<li>Parking</li>
+		<li>Free WiFi</li>
+		<li>Pets allowed</li>
+		<li>Bar</li>
+		<li>Good breakfast</li>
+	</ul>
+</div>
+<div class="col-p-1">
+<img src="img/Front Drive - City Works.jpg" width="70%">
+</div>
+<div class="col-p-2 font">
+	<b>Hotel Fairmont</b>
+	<ul type="square">
+		<li>This accomodation will be provided for NCC music festival in Millennium Park, Chicago.</li>
+		<li>This is a four-star hotel.</li>
+		<li>Address: 200 N Columbus Dr, Chicago, IL 60601, United States</li>
+		<li>Facilities provided</li>
+		<li>Air conditioning</li>
+		<li>Pet friendly</li>
+		<li>Bar</li>
+		<li>Full service spa</li>
+		<li>Free WiFi</li>
+		<li>Bell staff</li>
+		<li>Wake up calls</li>
+		<li>Child care</li>
+	</ul>
+</div>
+<script type="text/javascript">
+	function show()
+	{
+		var navMenu = document.getElementById('myNav');
+		var marginAdjust = document.getElementById('festivalText');
+		if(navMenu.style.display == "none")
+		{
+			navMenu.style.display = "block";
+			marginAdjust.style.marginTop = "90%";
+		}
+		else
+		{
+			navMenu.style.display = "none";
+			marginAdjust.style.marginTop = "35%";
+		}
+	}
+</script>
+</body>
+</html>

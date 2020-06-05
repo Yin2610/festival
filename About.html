@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+	<header>
+		<div class="header">NCC Music Festivals</div>
+		<div class="mobileNav">
+			<img src="img/icon.png" width="7%" height="7%" onclick="show()">
+		</div>
+		<nav>
+			<ul class="nav" id="myNav">
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="Festivals.html">Festivals</a></li>
+			<li><a href="Register.html">Register</a></li>
+			<li><a href="About.html" class="selectTab">About</a></li>
+			<li><a href="NewActivities.html">New Activities</a></li>
+			<li><a href="BookOnline.html">Book Online</a></li>
+			<li><a href="Accommodation.html">Accommodation</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="festivalText margin-adjust" id="festivalText">About us</div>
+	<div id="aboutBG">
+	<ul>
+	<br><li>The NCC Music Festivals company was founded in 2017 by Mr.Tim.</li> 
+	<br><li>Mr. Tim's speech:</li>
+	<br>" We founded this company with the aim of bringing people joy. We can see that many people struggling for their lives day by day. But we don't see them enjoying their lives. That is the reason why people need to work at their work time and rest at their rest time. We ensure that these music festivals will drive away the stress out of your mind and you wake up the next morning being alert. We ensure that our company recommends you the best and the low-costing accommodations too. Music is the best way to release one's stress and regain lost energy. Come and join us at the music festivals right now. "
+	</ul>
+	</div>
+	<div class="font">
+	<video id="video" width="70%" controls autoplay loop muted>
+		<source src="img/y2mate.com - Ultra Music Festival Short Clip_74QgCSMnXwg_360p.mp4" type="video/mp4">
+		<source src="img/y2mate.com - Ultra Music Festival Short Clip_74QgCSMnXwg_360p.ogg" type="video/ogg">
+		Your browser does not support the video.
+	</video>
+	<div id="bgCEO">
+		<img src="img/1.jpg" id="imgCEO">
+	<div id="txtCEO">Mr. Tim<br><font id="txtCEO1">Our CEO</font></div>
+	</div>
+	<footer>
+		<div>Follow us on facebook, instagram and twitter.<br>
+		<ul class="socialLink">
+  			<li id="FACEBOOK"><a href="http://facebook.com"></a></li>
+  			<li id="INSTAGRAM"><a href="http://instagram.com"></a></li>
+ 			<li id="TWITTER"><a href="http://twitter.com"></a></li>
+		</ul>
+		</div>
+		<div>Copyright ©2020 All rights reserved </div>
+	</footer>
+	</div>
+<script type="text/javascript">
+	function show()
+	{
+		var navMenu = document.getElementById('myNav');
+		var marginAdjust = document.getElementById('festivalText');
+		if(navMenu.style.display == "none")
+		{
+			navMenu.style.display = "block";
+			marginAdjust.style.marginTop = "90%";
+		}
+		else
+		{
+			navMenu.style.display = "none";
+			marginAdjust.style.marginTop = "35%";
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+	<header>
+		<div class="header">NCC Music Festivals</div>
+		<div class="mobileNav">
+			<img src="img/icon.png" width="7%" height="7%" onclick="show()">
+		</div>
+		<nav>
+			<ul class="nav" id="myNav">
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="Festivals.html">Festivals</a></li>
+			<li><a href="Register.html"  class="selectTab">Register</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="NewActivities.html">New Activities</a></li>
+			<li><a href="BookOnline.html">Book Online</a></li>
+			<li><a href="Accommodation.html">Accommodation</a></li>
+			</ul>
+		</nav>
+	</header>
+<form id="registerForm" method="post" class="font margin-adjust">
+	<div class="festivalText" id="festivalText">Register</div>
+	<div>Do you have an account? If you already have one, go to <a class="link" href="BookOnline.html">book online</a>.</div>
+	<p>
+	<table column="2" align="center" cellpadding="10px" bgcolor="pink">
+		<tr align="center">
+		<td>Don't you have any account? You can create NOW.</td>
+		</tr>
+		<tr align="center">
+			<td><input type="text" name="txtFirstName" placeholder="First Name" id="txtBox"></td>
+		</tr>
+		<tr align="center">
+			<td><input type="text" name="txtLastName" placeholder="Last Name" id="txtBox"></td>
+		</tr>
+		<tr align="center">
+			<td><input type="text" name="txtEmail" placeholder="Your email" id="txtBox"></td>
+		</tr>
+		<tr align="center">
+			<td><input type="text" name="txtEmail" placeholder="Confirm your email" id="txtBox"></td>
+		</tr>
+		<tr align="center">
+			<td><input type="text" name="txtAcc" placeholder="Your account name." id="txtBox"></td>
+		</tr>
+		<tr align="center">
+			<td><input type="text" name="txtPassword" placeholder="Password. It must contain at least 6 characters." id="txtBox"></td>
+		</tr>
+		<tr align="center">
+			<td><input type="text" name="txtCountry" placeholder="Your country" id="txtBox"></td>
+		</tr>
+		<tr align="center">
+			<td><input type="submit" name="btnCreate" value="Create & Subscribe" id="btn"></td>
+		</tr>
+		<tr><td>If you have anything you want to know, contact NCCMusicFestival@gmail.com</td></tr>
+	</table>
+	</p>
+</form>
+<script type="text/javascript">
+	function show()
+	{
+		var navMenu = document.getElementById('myNav');
+		var marginAdjust = document.getElementById('festivalText');
+		if(navMenu.style.display == "none")
+		{
+			navMenu.style.display = "block";
+			marginAdjust.style.marginTop = "90%";
+		}
+		else
+		{
+			navMenu.style.display = "none";
+			marginAdjust.style.marginTop = "35%";
+		}
+	}
+</script>
+</body>
+</html>

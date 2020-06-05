@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Online</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+	<header>
+		<div class="header">NCC Music Festivals</div>
+		<div class="mobileNav">
+			<img src="img/icon.png" width="7%" height="7%" onclick="show()">
+		</div>
+		<nav>
+			<ul class="nav" id="myNav">
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="Festivals.html">Festivals</a></li>
+			<li><a href="Register.html">Register</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="NewActivities.html">New Activities</a></li>
+			<li><a href="BookOnline.html" class="selectTab">Book Online</a></li>
+			<li><a href="Accommodation.html">Accommodation</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="festivalText margin-adjust" id="festivalText">Book online</div>
+	<p>
+	<form id="BookOnlineForm" method="post" class="font">
+		<table column="2" align="center" cellpadding="20px" bgcolor="pink">
+		<tr>
+			<td class="col-p-4">
+				Enter your account name: 
+			</td>
+			<td class="col-p-4">
+				<input type="text" name="txtAcc" id="txtBox">
+			</td>
+		</tr>
+		<tr>
+			<td class="col-p-4">
+				Enter your password:
+			</td>
+			<td class="col-p-4">
+				<input type="text" name="txtPassword" id="txtBox">
+			</td>
+		</tr>
+		<tr>
+			<td class="col-p-4">Choose the music festival to register:
+			</td>
+			<td class="col-p-4">
+			<select id="combo">
+			<option value="Germany festival">Festival in Love Family Park, Germany</option>
+			<option value="Chicago festival">Festival in Millennium Park, Chicago</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="col-p-4">Choose your ticket:
+			</td>
+			<td class="col-p-4">
+			<select id="combo">
+			<option value="VIP">VIP</option>
+			<option value="Normal">Normal</option>
+			<option value="Multi-day pass">Multi-day pass</option>
+			<option value="One-day pass">One-day pass</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="col-p-4">
+			Enter the phone number we can contact you:
+			</td>
+			<td class="col-p-4">
+				<input type="text" name="txtPhNo" placeholder="Area code - Phone number" id="txtBox">
+			</td>
+		</tr>
+		<tr>
+			<td class="col-p-4">Enter the departure date:</td>
+			<td class="col-p-4">
+			<select>
+			<option value="January">January</option>
+			<option value="February">February</option>
+			<option value="March">March</option>
+			<option value="April">April</option>
+			<option value="May">May</option>
+			<option value="June">June</option>
+			<option value="July">July</option>
+			<option value="August">August</option>
+			<option value="September">September</option>
+			<option value="October">October</option>
+			<option value="November">November</option>
+			<option value="December">December</option>
+			</select>
+			<input type="text" name="txtDepartureD" placeholder="Date" id="txtDate">
+			<input type="text" name="txtDepartureY" placeholder="Year" id="txtDate"></td>
+		</tr>
+		<tr>
+			<td class="col-p-4">Enter the return date:</td>
+			<td class="col-p-4">
+			<select>
+			<option value="January">January</option>
+			<option value="February">February</option>
+			<option value="March">March</option>
+			<option value="April">April</option>
+			<option value="May">May</option>
+			<option value="June">June</option>
+			<option value="July">July</option>
+			<option value="August">August</option>
+			<option value="September">September</option>
+			<option value="October">October</option>
+			<option value="November">November</option>
+			<option value="December">December</option>
+			</select>
+			<input type="text" name="txtReturnD" placeholder="Date" id="txtDate">
+			<input type="text" name="txtReturnY" placeholder="Year" id="txtDate"></td>
+		</tr>
+		<tr align="center">
+		<td colspan="2">
+			<input type="submit" name="btnSubmit" value="Book now" id="btn">
+		</td>
+		</tr>
+		</table>
+	</form>
+</p>
+<script type="text/javascript">
+	function show()
+	{
+		var navMenu = document.getElementById('myNav');
+		var marginAdjust = document.getElementById('festivalText');
+		if(navMenu.style.display == "none")
+		{
+			navMenu.style.display = "block";
+			marginAdjust.style.marginTop = "90%";
+		}
+		else
+		{
+			navMenu.style.display = "none";
+			marginAdjust.style.marginTop = "35%";
+		}
+	}
+</script>
+</body>
+</html>
